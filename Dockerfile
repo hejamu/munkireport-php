@@ -51,7 +51,7 @@ RUN mkdir -p app/db && \
 RUN php database/migrate.php
 
 RUN rm -rf /var/www/html && \
-    ln -s /var/munkireport/public /var/www/html
+    ln -s /var/munkireport/public /var/www/html/munkireport
 
 RUN a2enmod rewrite
 
